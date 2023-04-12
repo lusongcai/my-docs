@@ -11,8 +11,12 @@
             "id": "440abdd9958767f1",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,6 +124,16 @@
             "type": "leaf",
             "state": {
               "type": "outline",
+              "state": {
+                "file": "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md"
+              }
+            }
+          },
+          {
+            "id": "b6c04863da421713",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
               "state": {}
             }
           }
@@ -126,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,6 +162,8 @@
   },
   "active": "440abdd9958767f1",
   "lastOpenFiles": [
+    "个人成长/刻意练习：如何从新手到大师-安德斯·艾利克森 罗伯特·普尔.md",
+    "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md",
     "202304120044.md",
     "202304120045.md",
     "202304120043.md",
@@ -161,7 +178,6 @@
     "文学/茶馆（无删节经典完整版）-老舍.md",
     "心理/自律100天，穿越人生盲点-杨晓霞.md",
     "未分类/趋势戒律：超额收益交易策略-迈克尔·W·柯弗(Michael W. Covel).md",
-    "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md",
     "历史/西南联大行思录-张曼菱.md",
     "科学技术/宇宙-卡尔·萨根.md",
     "艺术/摄影入门：拍出美照超简单-乔旭亮.md",
@@ -172,7 +188,6 @@
     "个人成长/4点起床：最养生和高效的时间管理-中岛孝志.md",
     "个人成长/活好：我这样活到105岁-日野原重明.md",
     "经济理财/牛奶可乐经济学（完整版）-罗伯特·弗兰克.md",
-    "计算机/一步一步学Spring Boot：微服务项目实战(第2版)-黄文毅.md",
     "未分类",
     "艺术",
     "医学健康",
