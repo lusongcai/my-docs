@@ -1,0 +1,194 @@
+{
+  "main": {
+    "id": "2a9e38a2e41fbae5",
+    "type": "split",
+    "children": [
+      {
+        "id": "6411c1260646fbf7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "440abdd9958767f1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "31a0f96cd0ce3a86",
+    "type": "split",
+    "children": [
+      {
+        "id": "59ac6da271e4013c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b16933e515651db3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5cb7d5d19ee2028b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4d5e41c2551e526c",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a26074be251a548a",
+    "type": "split",
+    "children": [
+      {
+        "id": "4982fc3cb3bf165c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f6526417f1c77dad",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "084d3bd385bfff85",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fe1273de70c37905",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "c7bbbb36d60b249a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "b6c04863da421713",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "zk-prefixer:创建时间戳笔记": false,
+      "markdown-importer:打开 Markdown 格式转换器": false,
+      "publish:发布更改": false,
+      "random-note:开始漫游笔记": false,
+      "workspaces:管理工作区布局": false,
+      "obsidian-weread-plugin:Weread": false
+    }
+  },
+  "active": "440abdd9958767f1",
+  "lastOpenFiles": [
+    "计算机/奇点临近-雷·库兹韦尔.md",
+    "计算机/一步一步学Spring Boot：微服务项目实战(第2版)-黄文毅.md",
+    "计算机",
+    "艺术/摄影入门：拍出美照超简单-乔旭亮.md",
+    "艺术",
+    "经济理财/证券分析：原书第6版（经典畅销版）-本杰明·格雷厄姆 戴维·多德.md",
+    "经济理财/股票魔法师 Ⅱ：像冠军一样思考和交易-Mark Minervini.md",
+    "经济理财/牛奶可乐经济学（完整版）-罗伯特·弗兰克.md",
+    "经济理财",
+    "精品小说/漫长的告别（读客三个圈经典文库）-雷蒙德·钱德勒.md",
+    "精品小说/杀死一只知更鸟（同名电影原著）-哈珀·李.md",
+    "精品小说/变身-东野圭吾.md",
+    "精品小说",
+    "科学技术/宇宙-卡尔·萨根.md",
+    "科学技术",
+    "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md",
+    "社会文化",
+    "生活百科/手工咖啡：咖啡爱好者的完美冲煮指南-杰茜卡· 伊斯托 安德烈亚斯· 威尔霍夫.md",
+    "生活百科/好的咖啡-井崎英典.md",
+    "生活百科/做好一道菜-罗生堂.md",
+    "生活百科",
+    "未分类/趋势戒律：超额收益交易策略-迈克尔·W·柯弗(Michael W. Covel).md",
+    "未分类",
+    "文学/黄金时代-王小波.md",
+    "文学/飘（全集）（经典译林）-玛格丽特·米切尔.md",
+    "文学/霍乱时期的爱情-加西亚•马尔克斯.md",
+    "文学/追风筝的人-卡勒德·胡赛尼.md",
+    "文学/追忆似水年华（全集）-普鲁斯特.md",
+    "文学/茶馆（无删节经典完整版）-老舍.md",
+    "文学/禅与摩托车维修艺术-罗伯特·M.波西格.md",
+    "文学/生命是孤独的旅程-贾平凹.md",
+    "文学/月亮和六便士-毛姆.md",
+    "文学/时间从来不语，却回答了所有问题-季羡林.md",
+    "文学/孔乙己-鲁迅.md",
+    "文学",
+    "心理"
+  ]
+}
