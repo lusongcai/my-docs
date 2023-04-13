@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "6411c1260646fbf7",
+        "id": "b649fa2d3273fa4a",
         "type": "tabs",
         "children": [
           {
-            "id": "440abdd9958767f1",
+            "id": "23113f174359ba18",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -92,17 +92,6 @@
             }
           },
           {
-            "id": "084d3bd385bfff85",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "fe1273de70c37905",
             "type": "leaf",
             "state": {
@@ -110,6 +99,17 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "084d3bd385bfff85",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
               }
             }
           },
@@ -130,7 +130,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -152,8 +152,9 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "440abdd9958767f1",
+  "active": "084d3bd385bfff85",
   "lastOpenFiles": [
+    "未命名.md",
     "计算机/奇点临近-雷·库兹韦尔.md",
     "计算机/一步一步学Spring Boot：微服务项目实战(第2版)-黄文毅.md",
     "计算机",
@@ -187,7 +188,6 @@
     "文学/生命是孤独的旅程-贾平凹.md",
     "文学/月亮和六便士-毛姆.md",
     "文学/时间从来不语，却回答了所有问题-季羡林.md",
-    "文学/孔乙己-鲁迅.md",
     "文学",
     "心理"
   ]
