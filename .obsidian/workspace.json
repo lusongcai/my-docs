@@ -11,8 +11,12 @@
             "id": "23113f174359ba18",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "未命名.md"
+              }
             }
           },
           {
@@ -130,7 +138,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -152,8 +160,9 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "084d3bd385bfff85",
+  "active": "c7bbbb36d60b249a",
   "lastOpenFiles": [
+    "README.md",
     "未命名.md",
     "计算机/奇点临近-雷·库兹韦尔.md",
     "计算机/一步一步学Spring Boot：微服务项目实战(第2版)-黄文毅.md",
@@ -187,7 +196,6 @@
     "文学/禅与摩托车维修艺术-罗伯特·M.波西格.md",
     "文学/生命是孤独的旅程-贾平凹.md",
     "文学/月亮和六便士-毛姆.md",
-    "文学/时间从来不语，却回答了所有问题-季羡林.md",
     "文学",
     "心理"
   ]
