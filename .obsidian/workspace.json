@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "未命名.md",
+                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "未命名.md",
+                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "未命名.md",
+                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "未命名.md"
+                "file": "哲学宗教/传习录（全译全注）-王阳明.md"
               }
             }
           },
@@ -160,10 +160,10 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "c7bbbb36d60b249a",
+  "active": "23113f174359ba18",
   "lastOpenFiles": [
-    "README.md",
     "未命名.md",
+    "README.md",
     "计算机/奇点临近-雷·库兹韦尔.md",
     "计算机/一步一步学Spring Boot：微服务项目实战(第2版)-黄文毅.md",
     "计算机",
