@@ -1,4 +1,8 @@
 [
   "obsidian-weread-plugin",
-  "obsidian-git"
+  "obsidian-git",
+  "dataview",
+  "media-extended",
+  "mx-bili-plugin",
+  "obsidian-sortable"
 ]

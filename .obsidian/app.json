@@ -9,5 +9,6 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "./",
+  "showInlineTitle": true
 }
