@@ -13,13 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
+                "file": "医学健康/睡觉-梁冬.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "76fa3edb7db041fb",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.7"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -64,6 +75,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "3eaa7e4873098af2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -85,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
+                "file": "医学健康/睡觉-梁冬.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
+                "file": "医学健康/睡觉-梁冬.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +144,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md"
+                "file": "医学健康/睡觉-梁冬.md"
               }
             }
           },
@@ -160,8 +179,9 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "b16933e515651db3",
+  "active": "76fa3edb7db041fb",
   "lastOpenFiles": [
+    "哲学宗教/传习录（全译全注）-王阳明.md",
     "未命名.md",
     "README.md",
     "计算机/奇点临近-雷·库兹韦尔.md",
@@ -195,7 +215,6 @@
     "文学/茶馆（无删节经典完整版）-老舍.md",
     "文学/禅与摩托车维修艺术-罗伯特·M.波西格.md",
     "文学/生命是孤独的旅程-贾平凹.md",
-    "文学/月亮和六便士-毛姆.md",
     "文学",
     "心理"
   ]
