@@ -14,7 +14,11 @@
     },
     {
       "name": "wr_skey",
+<<<<<<< HEAD
       "value": "X56nWdPP"
+=======
+      "value": "X62kzzaJ"
+>>>>>>> fa8b896a57df60ca610c0230ad5d3969ed429de3
     },
     {
       "name": "wr_pf",
@@ -42,11 +46,15 @@
     }
   ],
   "noteLocation": "/",
-  "dailyNotesLocation": "未分类",
+  "dailyNotesLocation": "/",
   "insertAfter": "<!-- start of weread -->",
   "insertBefore": "<!-- end of weread -->",
   "dailyNotesFormat": "YYYY-MM-DD",
+<<<<<<< HEAD
   "lastCookieTime": 1684490353073,
+=======
+  "lastCookieTime": 1682097451825,
+>>>>>>> fa8b896a57df60ca610c0230ad5d3969ed429de3
   "isCookieValid": true,
   "user": "LSC",
   "userVid": "251971398",
