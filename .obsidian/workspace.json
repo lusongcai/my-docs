@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "0dc6ec5e7a1a7973",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -168,7 +179,7 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "23113f174359ba18",
+  "active": "0dc6ec5e7a1a7973",
   "lastOpenFiles": [
     "哲学宗教/传习录（全译全注）-王阳明.md",
     "2023-04-16.md",
