@@ -30,9 +30,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "04bf2501450fb6af",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -181,7 +191,7 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "b16933e515651db3",
+  "active": "04bf2501450fb6af",
   "lastOpenFiles": [
     "城南旧事.md",
     "偷影子的人.md",
