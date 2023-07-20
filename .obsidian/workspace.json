@@ -20,29 +20,19 @@
             }
           },
           {
-            "id": "0dc6ec5e7a1a7973",
+            "id": "87cfc620c3771542",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
+                "file": "偷影子的人.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "04bf2501450fb6af",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.3.5"
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -100,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a26074be251a548a",
@@ -116,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
+                "file": "偷影子的人.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
+                "file": "偷影子的人.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -156,7 +147,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md"
+                "file": "偷影子的人.md"
               }
             }
           },
@@ -191,13 +182,22 @@
       "obsidian-weread-plugin:Weread": false
     }
   },
-  "active": "04bf2501450fb6af",
+  "active": "b16933e515651db3",
   "lastOpenFiles": [
+    "202307201704.md",
+    "2023-04-20.md",
+    "不抱怨的世界.md",
+    "个人成长/遇见未知的自己（全新修订版）-张德芬.md",
+    "傲慢与偏见.md",
+    "心理/如何克服社交焦虑-埃伦·亨德里克森.md",
+    "人生很短，你要做个有趣的人.md",
+    "个人成长/读书是一辈子的事-樊登.md",
+    "个人成长/社交恐惧：如何走出自我排斥的陷阱-克莱尔·伊斯特汉姆.md",
+    "悲惨世界（全册）.md",
+    "明朝那些事儿（全集）.md",
     "城南旧事.md",
     "偷影子的人.md",
-    "悲惨世界（全册）.md",
     "哲学宗教/传习录（全译全注）-王阳明.md",
-    "2023-04-16.md",
     "文学/飞鸟集-泰戈尔.md",
     "未命名.md",
     "README.md",
@@ -214,19 +214,10 @@
     "精品小说/杀死一只知更鸟（同名电影原著）-哈珀·李.md",
     "精品小说/变身-东野圭吾.md",
     "精品小说",
-    "科学技术/宇宙-卡尔·萨根.md",
     "科学技术",
-    "社会文化/茶经-陆羽 陆廷灿著 翟文明编译.md",
     "社会文化",
-    "生活百科/手工咖啡：咖啡爱好者的完美冲煮指南-杰茜卡· 伊斯托 安德烈亚斯· 威尔霍夫.md",
-    "生活百科/好的咖啡-井崎英典.md",
-    "生活百科/做好一道菜-罗生堂.md",
     "生活百科",
-    "未分类/趋势戒律：超额收益交易策略-迈克尔·W·柯弗(Michael W. Covel).md",
     "未分类",
-    "文学/黄金时代-王小波.md",
-    "文学/飘（全集）（经典译林）-玛格丽特·米切尔.md",
-    "文学/霍乱时期的爱情-加西亚•马尔克斯.md",
     "文学",
     "心理"
   ]

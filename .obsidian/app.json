@@ -10,5 +10,6 @@
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "./",
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "newLinkFormat": "relative"
 }
