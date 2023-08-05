@@ -10,5 +10,8 @@
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
   "attachmentFolderPath": "./",
-  "showInlineTitle": true
+  "showInlineTitle": true,
+  "showFrontmatter": true,
+  "showLineNumber": true,
+  "rightToLeft": false
 }

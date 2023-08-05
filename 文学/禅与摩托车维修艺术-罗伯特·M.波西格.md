@@ -1,13 +1,18 @@
 ---
 doc_type: weread-highlights-reviews
-bookId: "33810356"
+bookId: '33810356'
 author: 罗伯特·M.波西格
-cover: https://wfqqreader-1252317822.image.myqcloud.com/cover/356/33810356/t7_33810356.jpg
+cover: >-
+  https://wfqqreader-1252317822.image.myqcloud.com/cover/356/33810356/t7_33810356.jpg
 reviewCount: 0
 noteCount: 4
 isbn: 9787229131548
 category: 文学-外国文学
-lastReadDate: 2023-03-17
+lastReadDate: 2023-03-17T00:00:00.000Z
+profileName: lusongcai
+postId: '97'
+categories:
+  - 2
 ---
 # 元数据
 > [!abstract] 禅与摩托车维修艺术

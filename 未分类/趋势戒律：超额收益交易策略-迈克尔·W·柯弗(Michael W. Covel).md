@@ -5,9 +5,13 @@ author: 迈克尔·W·柯弗(Michael W. Covel)
 cover: https://res.weread.qq.com/wrepub/CB_6043Ku3OP24R6Sx6UI_parsecover
 reviewCount: 0
 noteCount: 1
-isbn: null
-category: null
-lastReadDate: 2021-08-21
+isbn: 
+category: 
+lastReadDate: 2021-08-21T00:00:00.000Z
+profileName: lusongcai
+postId: '89'
+categories:
+  - 5
 ---
 # 元数据
 > [!abstract] 趋势戒律：超额收益交易策略

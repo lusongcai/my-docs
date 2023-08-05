@@ -1,13 +1,18 @@
 ---
 doc_type: weread-highlights-reviews
-bookId: "23914715"
+bookId: '23914715'
 author: Mark Minervini
-cover: https://weread-1258476243.file.myqcloud.com/weread/cover/44/YueWen_23914715/t7_YueWen_23914715.jpg
+cover: >-
+  https://weread-1258476243.file.myqcloud.com/weread/cover/44/YueWen_23914715/t7_YueWen_23914715.jpg
 reviewCount: 0
 noteCount: 4
 isbn: 9787121335778
 category: 经济理财-理财
-lastReadDate: 2021-07-24
+lastReadDate: 2021-07-24T00:00:00.000Z
+profileName: lusongcai
+postId: '63'
+categories:
+  - 5
 ---
 # 元数据
 > [!abstract] 股票魔法师 Ⅱ：像冠军一样思考和交易

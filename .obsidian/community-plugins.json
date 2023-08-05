@@ -4,5 +4,8 @@
   "dataview",
   "media-extended",
   "mx-bili-plugin",
-  "obsidian-sortable"
+  "obsidian-sortable",
+  "obsidian-minimal-settings",
+  "obsidian-state-switcher",
+  "obsidian-wordpress"
 ]

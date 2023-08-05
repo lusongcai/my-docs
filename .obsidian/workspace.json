@@ -13,26 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "哲学宗教/传习录（全译全注）-王阳明.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "0dc6ec5e7a1a7973",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "文学/傲慢与偏见-简·奥斯丁.md",
+                "file": "哲学宗教/活出生命的意义-维克多·弗兰克尔.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "文学/傲慢与偏见-简·奥斯丁.md",
+                "file": "哲学宗教/活出生命的意义-维克多·弗兰克尔.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "文学/傲慢与偏见-简·奥斯丁.md",
+                "file": "哲学宗教/活出生命的意义-维克多·弗兰克尔.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "文学/傲慢与偏见-简·奥斯丁.md"
+                "file": "哲学宗教/活出生命的意义-维克多·弗兰克尔.md"
               }
             }
           },
@@ -175,41 +162,41 @@
       "command-palette:打开命令面板": false,
       "zk-prefixer:创建时间戳笔记": false,
       "markdown-importer:打开 Markdown 格式转换器": false,
-      "publish:发布更改": false,
       "random-note:开始漫游笔记": false,
       "workspaces:管理工作区布局": false,
-      "obsidian-weread-plugin:Weread": false
+      "obsidian-weread-plugin:Weread": false,
+      "obsidian-wordpress:发布到 WordPress": false
     }
   },
-  "active": "0dc6ec5e7a1a7973",
+  "active": "23113f174359ba18",
   "lastOpenFiles": [
+    "哲学宗教/打开：周濂的100堂西方哲学课-周濂.md",
+    "哲学宗教/活出生命的意义-维克多·弗兰克尔.md",
     "哲学宗教/传习录（全译全注）-王阳明.md",
+    "艺术/摄影入门：拍出美照超简单-乔旭亮.md",
+    "心理/自律100天，穿越人生盲点-杨晓霞.md",
+    "医学健康/睡觉-梁冬.md",
+    "医学健康/上班族身体保养指南（第2版）-路新宇.md",
+    "心理/自卑与超越-阿尔弗雷德·阿德勒.md",
+    "心理/也许你该找个人聊聊-洛莉·戈特利布.md",
+    "心理/天才在左 疯子在右-高铭.md",
+    "心理/思维的囚徒-亚历克斯·佩塔克斯 伊莱恩·丹顿.md",
+    "心理/社交天性：人类社交的三大驱动力-马修·利伯曼 贾拥民译.md",
+    "心理/社会心理学（第8版）-戴维·迈尔斯.md",
+    "心理/少有人走的路（1-8套装）-M.斯科特·派克.md",
+    "心理/如何克服社交焦虑-埃伦·亨德里克森.md",
+    "心理/认知觉醒：开启自我改变的原动力-周岭.md",
+    "心理/和另一个自己谈谈心-武志红.md",
+    "心理/被讨厌的勇气：“自我启发之父”阿德勒的哲学课-岸见一郎 古贺史健.md",
+    "文学/追忆似水年华（全集）-普鲁斯特.md",
+    "文学/追风筝的人-卡勒德·胡赛尼.md",
+    "文学/月亮和六便士-毛姆.md",
+    "文学/余华作品全集（《活着》等 13 册）-余华.md",
     "文学/偷影子的人-马克·李维.md",
-    "历史/明朝那些事儿（全集）-当年明月.md",
-    "文学/悲惨世界（全册）-雨果.md",
-    "个人成长/不抱怨的世界-道格拉斯·勒尔顿.md",
-    "文学/傲慢与偏见-简·奥斯丁.md",
-    "文学/灯塔男孩-亚历山大·帕洛马斯.md",
-    "个人成长/人生很短，你要做个有趣的人-王诗雨.md",
+    "文学/时间从来不语，却回答了所有问题-季羡林.md",
+    "文学/生命是孤独的旅程-贾平凹.md",
     "文学/生命册-李佩甫.md",
-    "傲慢与偏见.md",
-    "偷影子的人.md",
-    "写作助手-合并md文件-1691217406513.md",
-    "OUTPUT/生命册.md",
-    "OUTPUT/灯塔男孩.md",
-    "OUTPUT/明朝那些事儿（全集）.md",
-    "OUTPUT/悲惨世界（全册）.md",
-    "OUTPUT/城南旧事.md",
-    "OUTPUT/傲慢与偏见.md",
-    "OUTPUT/偷影子的人.md",
-    "OUTPUT/人生很短，你要做个有趣的人.md",
-    "OUTPUT/不抱怨的世界.md",
-    "OUTPUT/202307201704.md",
-    "OUTPUT/2023-04-20.md",
-    "OUTPUT/2023-04-16.md",
     "OUTPUT",
-    "城南旧事.md",
-    "明朝那些事儿（全集）.md",
     "计算机",
     "艺术",
     "经济理财",
