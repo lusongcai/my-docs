@@ -5,7 +5,7 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "promptDelete": true,
+  "promptDelete": false,
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "showUnsupportedFiles": true,
