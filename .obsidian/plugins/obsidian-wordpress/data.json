@@ -1,0 +1,31 @@
+{
+  "lang": "auto",
+  "profiles": [
+    {
+      "name": "lusongcai",
+      "apiType": "xml-rpc",
+      "endpoint": "https://blog.lusongcai.cn",
+      "xmlRpcPath": "/xmlrpc.php",
+      "saveUsername": true,
+      "savePassword": true,
+      "isDefault": true,
+      "lastSelectedCategories": [
+        14
+      ],
+      "username": "lusongcai",
+      "encryptedPassword": {
+        "key": "{\"alg\":\"A256GCM\",\"ext\":true,\"k\":\"HMbWX4FQfqTNsltQpwvvVqqaEDSUIraPaAOsNjo88WQ\",\"key_ops\":[\"encrypt\",\"decrypt\"],\"kty\":\"oct\"}",
+        "vector": "8/9KC1kNzYqaLK7u",
+        "encrypted": "vwDhGLBxZbaSolWWxvJXMC9AKq5ckCup"
+      }
+    }
+  ],
+  "showRibbonIcon": true,
+  "defaultPostStatus": "draft",
+  "defaultCommentStatus": "open",
+  "rememberLastSelectedCategories": true,
+  "showWordPressEditConfirm": false,
+  "mathJaxOutputType": "svg",
+  "enableHtml": false,
+  "version": "2"
+}
