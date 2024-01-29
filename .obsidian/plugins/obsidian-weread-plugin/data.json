@@ -2,15 +2,19 @@
   "cookies": [
     {
       "name": "wr_fp",
-      "value": "3870998798"
+      "value": "1426686907"
     },
     {
       "name": "wr_gid",
-      "value": "210584141"
+      "value": "200589389"
     },
     {
       "name": "wr_vid",
       "value": "251971398"
+    },
+    {
+      "name": "wr_skey",
+      "value": "wy3IsQyH"
     },
     {
       "name": "wr_pf",
@@ -18,7 +22,7 @@
     },
     {
       "name": "wr_rt",
-      "value": "web@bSs4rGs4FBAyfHMWI7r_AL"
+      "value": "web@~73ztnH~ICSAlpn_mSZ_AL"
     },
     {
       "name": "wr_localvid",
@@ -29,16 +33,12 @@
       "value": "LSC"
     },
     {
+      "name": "wr_avatar",
+      "value": "https://res.weread.qq.com/wravatar/WV0008-~L5EbaprbWlLKSZDbCpoDda/0"
+    },
+    {
       "name": "wr_gender",
       "value": "1"
-    },
-    {
-      "name": "wr_avatar",
-      "value": "https://wx.qlogo.cn/mmhead/jJSbu4Te5ibicJErMLzJUMueXNZWQ9RSKia71VvtUW5X631aBgiaRGxjlg/0"
-    },
-    {
-      "name": "wr_skey",
-      "value": "FiJuNA8H"
     }
   ],
   "noteLocation": "/",
@@ -46,7 +46,7 @@
   "insertAfter": "<!-- start of weread -->",
   "insertBefore": "<!-- end of weread -->",
   "dailyNotesFormat": "YYYY-MM-DD",
-  "lastCookieTime": 1691217282533,
+  "lastCookieTime": 1706508713146,
   "isCookieValid": true,
   "user": "LSC",
   "userVid": "251971398",
