@@ -2,22 +2,16 @@
   "lang": "auto",
   "profiles": [
     {
-      "name": "lusongcai",
+      "name": "Lusongcai",
       "apiType": "xml-rpc",
       "endpoint": "https://blog.lusongcai.cn",
       "xmlRpcPath": "/xmlrpc.php",
-      "saveUsername": true,
-      "savePassword": true,
+      "saveUsername": false,
+      "savePassword": false,
       "isDefault": true,
       "lastSelectedCategories": [
-        14
-      ],
-      "username": "lusongcai",
-      "encryptedPassword": {
-        "key": "{\"alg\":\"A256GCM\",\"ext\":true,\"k\":\"HMbWX4FQfqTNsltQpwvvVqqaEDSUIraPaAOsNjo88WQ\",\"key_ops\":[\"encrypt\",\"decrypt\"],\"kty\":\"oct\"}",
-        "vector": "8/9KC1kNzYqaLK7u",
-        "encrypted": "vwDhGLBxZbaSolWWxvJXMC9AKq5ckCup"
-      }
+        1
+      ]
     }
   ],
   "showRibbonIcon": true,
