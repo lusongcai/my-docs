@@ -1,0 +1,158 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BookCover from '../components/BookCover.astro';
+import { books, categories } from '../lib/library';
+import { Search, LayoutGrid, List, ChevronLeft, ChevronRight, X } from 'lucide-astro';
+---
+<Layout title="全部书目 | lusongcai 的书架" active="library">
+  <div class="container library-page">
+    <div class="page-heading">
+      <h1>全部书目</h1>
+      <p>{books.length} 本书，{categories.length} 个分类。</p>
+    </div>
+    <form class="library-toolbar" role="search" action="/library/">
+      <div class="search-field">
+        <Search size={20} aria-hidden="true" />
+        <input id="search" name="q" type="search" aria-label="搜索书名、作者或笔记全文" placeholder="搜索书名、作者、笔记中的一句话" autocomplete="off" />
+      </div>
+      <label class="select-control">
+        <span class="sr-only">书目分类</span>
+        <select id="category" name="category" aria-label="书目分类">
+          <option value="">全部分类</option>
+          {categories.map((category) => <option value={category}>{category}</option>)}
+        </select>
+      </label>
+      <label class="select-control">
+        <span class="sr-only">排列顺序</span>
+        <select id="sort" name="sort" aria-label="排列顺序">
+          <option value="date">最近阅读</option>
+          <option value="title">书名排序</option>
+          <option value="highlights">划线最多</option>
+        </select>
+      </label>
+      <div class="view-control" role="group" aria-label="书目视图" hidden data-enhanced>
+        <button type="button" id="grid-view" aria-label="封面视图" title="封面视图" aria-pressed="true"><LayoutGrid size={20} aria-hidden="true" /></button>
+        <button type="button" id="list-view" aria-label="列表视图" title="列表视图" aria-pressed="false"><List size={20} aria-hidden="true" /></button>
+      </div>
+      <noscript><button class="button primary" type="submit">查找</button></noscript>
+    </form>
+    <div class="result-line">
+      <p id="result-count" role="status" aria-live="polite">{books.length} 本书</p>
+      <button type="button" class="reset-button" id="reset" hidden><X size={16} aria-hidden="true" />清除筛选</button>
+    </div>
+    <div class="library-grid" id="book-results">
+      {books.map((book) => <article class="library-book" data-id={book.id}>
+        <a class="book-link" href={book.href}>
+          <BookCover book={book} />
+          <div class="book-details">
+            <h2>{book.title}</h2>
+            <p class="book-author">{book.author}</p>
+            <div class="book-meta"><span>{book.category}</span><span>{book.highlights} 处划线</span></div>
+          </div>
+        </a>
+      </article>)}
+    </div>
+    <div class="empty-results" id="empty-results" hidden>
+      <h2>还没有找到这本书</h2>
+      <p>换一个书名、作者，或缩短搜索内容。</p>
+      <a class="button primary" href="/library/">查看全部书目</a>
+    </div>
+    <nav class="pagination" aria-label="书目分页" hidden data-enhanced>
+      <button type="button" id="previous" aria-label="上一页" title="上一页"><ChevronLeft size={20} aria-hidden="true" /></button>
+      <span id="page-number" aria-live="polite"></span>
+      <button type="button" id="next" aria-label="下一页" title="下一页"><ChevronRight size={20} aria-hidden="true" /></button>
+    </nav>
+  </div>
+</Layout>
+<script>
+  import Fuse from 'fuse.js';
+  type Entry = { id: string; title: string; author: string; category: string; date: string; highlights: number; searchText: string };
+  const search = document.querySelector<HTMLInputElement>('#search')!;
+  const category = document.querySelector<HTMLSelectElement>('#category')!;
+  const sort = document.querySelector<HTMLSelectElement>('#sort')!;
+  const results = document.querySelector<HTMLElement>('#book-results')!;
+  const cards = new Map([...results.querySelectorAll<HTMLElement>('[data-id]')].map((card) => [card.dataset.id!, card]));
+  const count = document.querySelector<HTMLElement>('#result-count')!;
+  const reset = document.querySelector<HTMLButtonElement>('#reset')!;
+  const previous = document.querySelector<HTMLButtonElement>('#previous')!;
+  const next = document.querySelector<HTMLButtonElement>('#next')!;
+  const grid = document.querySelector<HTMLButtonElement>('#grid-view')!;
+  const list = document.querySelector<HTMLButtonElement>('#list-view')!;
+  let page = 1;
+  let view = 'grid';
+  let entries: Entry[] = [];
+  let fuse: Fuse<Entry>;
+  const pageSize = 12;
+  function readUrl() {
+    const params = new URLSearchParams(location.search);
+    search.value = params.get('q') || '';
+    category.value = params.get('category') || '';
+    sort.value = ['date', 'title', 'highlights'].includes(params.get('sort') || '') ? params.get('sort')! : 'date';
+    page = Math.max(1, Number.parseInt(params.get('page') || '1', 10) || 1);
+    view = params.get('view') === 'list' ? 'list' : 'grid';
+  }
+  function render(updateUrl = true) {
+    const query = search.value.trim();
+    let filtered = query ? fuse.search(query).map((r) => r.item) : [...entries];
+    if (category.value) filtered = filtered.filter((book) => book.category === category.value);
+    if (sort.value === 'title') filtered.sort((a, b) => a.title.localeCompare(b.title, 'zh-CN'));
+    else if (sort.value === 'highlights') filtered.sort((a, b) => b.highlights - a.highlights);
+    else if (!query) filtered.sort((a, b) => b.date.localeCompare(a.date));
+    const pages = Math.max(1, Math.ceil(filtered.length / pageSize));
+    page = Math.min(page, pages);
+    cards.forEach((card) => { card.hidden = true; });
+    for (const book of filtered.slice((page - 1) * pageSize, page * pageSize)) {
+      const card = cards.get(book.id);
+      if (card) { card.hidden = false; results.append(card); }
+    }
+    results.classList.toggle('is-list', view === 'list');
+    grid.setAttribute('aria-pressed', String(view === 'grid'));
+    list.setAttribute('aria-pressed', String(view === 'list'));
+    count.textContent = query || category.value ? `找到 ${filtered.length} 本书` : `${filtered.length} 本书`;
+    reset.hidden = !query && !category.value;
+    document.querySelector<HTMLElement>('#empty-results')!.hidden = filtered.length !== 0;
+    document.querySelector<HTMLElement>('.pagination')!.hidden = pages <= 1;
+    document.querySelector<HTMLElement>('#page-number')!.textContent = `${page} / ${pages}`;
+    previous.disabled = page === 1;
+    next.disabled = page >= pages;
+    if (updateUrl) {
+      const params = new URLSearchParams();
+      if (query) params.set('q', query);
+      if (category.value) params.set('category', category.value);
+      if (sort.value !== 'date') params.set('sort', sort.value);
+      if (page > 1) params.set('page', String(page));
+      if (view === 'list') params.set('view', view);
+      history.replaceState(null, '', `${location.pathname}${params.size ? `?${params}` : ''}`);
+    }
+  }
+  async function initialize() {
+    try {
+      const response = await fetch('/search.json');
+      if (!response.ok) throw new Error('Search index unavailable');
+      entries = await response.json();
+      fuse = new Fuse(entries, { keys: [{ name: 'title', weight: 4 }, { name: 'author', weight: 2 }, 'searchText'], ignoreLocation: true, threshold: 0.25, minMatchCharLength: 1 });
+      readUrl();
+      document.querySelectorAll<HTMLElement>('[data-enhanced]').forEach((el) => { el.hidden = false; });
+      render(false);
+      let timer: ReturnType<typeof setTimeout>;
+      search.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(() => { page = 1; render(); }, 150); });
+      for (const input of [category, sort]) input.addEventListener('change', () => { page = 1; render(); });
+      document.querySelector('.library-toolbar')!.addEventListener('submit', (event) => { event.preventDefault(); page = 1; render(); });
+      grid.addEventListener('click', () => { view = 'grid'; render(); });
+      list.addEventListener('click', () => { view = 'list'; render(); });
+      reset.addEventListener('click', () => { search.value = ''; category.value = ''; page = 1; render(); search.focus(); });
+      function movePage(delta: number) {
+        page += delta; render();
+        document.querySelector('.library-toolbar')!.scrollIntoView({ behavior: 'instant', block: 'start' });
+        count.tabIndex = -1; count.focus({ preventScroll: true });
+      }
+      previous.addEventListener('click', () => movePage(-1));
+      next.addEventListener('click', () => movePage(1));
+      window.addEventListener('popstate', () => { readUrl(); render(false); });
+    } catch {
+      count.textContent = '搜索暂不可用，仍可浏览全部书目。刷新页面可重试。';
+      search.disabled = true; category.disabled = true; sort.disabled = true;
+    }
+  }
+  initialize();
+</script>

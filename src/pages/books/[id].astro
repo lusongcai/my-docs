@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BookCover from '../../components/BookCover.astro';
+import { books, sourceUrl } from '../../lib/library';
+import { ArrowLeft, ArrowUpRight } from 'lucide-astro';
+export function getStaticPaths() {
+  return books.map((book, index) => ({ params: { id: book.id }, props: { book, index } }));
+}
+const { book, index } = Astro.props;
+const next = books[(index + 1) % books.length];
+---
+<Layout title={`${book.title} | lusongcai 的书架`} description={`${book.author}《${book.title}》的阅读摘录与笔记。`} active="library">
+  <div class="container reader-page">
+    <a class="back-link" href={`/library/?category=${encodeURIComponent(book.category)}`}><ArrowLeft size={16} aria-hidden="true" />{book.category}</a>
+    <header class="reading-header">
+      <div class="reading-intro">
+        <h1>{book.title}</h1>
+        <p class="reading-author">{book.author}</p>
+        <dl class="reading-meta">
+          <div><dt>最近阅读</dt><dd><time datetime={book.date}>{book.date || '未记录'}</time></dd></div>
+          <div><dt>划线</dt><dd>{book.highlights} 处</dd></div>
+        </dl>
+        <a class="original-link" href={sourceUrl(book)}>查看笔记原文 <ArrowUpRight size={16} aria-hidden="true" /></a>
+      </div>
+      <div class="reading-cover"><BookCover book={book} priority /></div>
+    </header>
+    <div class="reading-layout">
+      <article class="prose" set:html={book.content || '<p>这本书还没有留下划线或评论。</p>'} />
+      {book.headings.length > 0 && <aside class="reading-toc" aria-label="章节目录">
+        <details class="toc-disclosure">
+          <summary>目录</summary>
+          <nav aria-label="本文章节">
+            {book.headings.map((heading) => <a href={`#${heading.id}`} class:list={{ 'toc-child': heading.level > 2 }}>{heading.text}</a>)}
+          </nav>
+        </details>
+      </aside>}
+    </div>
+    <nav class="reading-next" aria-label="继续阅读">
+      <a href="/library/"><ArrowLeft size={20} aria-hidden="true" />返回全部书目</a>
+      {next && <a href={next.href}><span>继续翻阅</span><strong>{next.title}</strong><ArrowUpRight size={20} aria-hidden="true" /></a>}
+    </nav>
+  </div>
+</Layout>
+<script>
+  const disclosure = document.querySelector<HTMLDetailsElement>('.toc-disclosure');
+  if (disclosure) disclosure.open = matchMedia('(min-width: 60rem)').matches;
+</script>

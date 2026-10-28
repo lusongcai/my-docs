@@ -1,0 +1,39 @@
+[
+ {
+  "date": "2026-10-28",
+  "shape": "Index-First",
+  "theme": "riso",
+  "axes": "light/grotesk-heavy/chromatic-pink",
+  "hero": "Banner",
+  "nav": "edge-aligned",
+  "footer": "colophon",
+  "imagery": "original book covers",
+  "photos": [],
+  "entry": "personal library with real book covers",
+  "fingerprint": {
+   "lead": "actual books",
+   "flow": "reading index",
+   "alignment": "left",
+   "density": "editorial index",
+   "surface": "paper and pink ink",
+   "close": "book catalogue"
+  },
+  "sections": [
+   "hero shelf",
+   "recent reading rows",
+   "category index",
+   "highlight index",
+   "colophon"
+  ],
+  "signature": "real book covers beside one Riso overprinted title",
+  "waived": [
+   "38iii"
+  ],
+  "prompt": "Choose a Hallmark design for lusongcai/my-docs and deploy it as the personal GitHub homepage. Actual material is a Chinese reading notebook.",
+  "reviews": {
+   "hero": "subagent, 2 resolved",
+   "finish": "subagent, 1 resolved"
+  },
+  "mode": "build"
+ }
+]

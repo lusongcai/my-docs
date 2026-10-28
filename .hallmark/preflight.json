@@ -1,0 +1,19 @@
+{
+  "scanned": "2026-10-28",
+  "findings": {
+    "fonts": "No website font system; Obsidian themes are editor preferences, excluded.",
+    "palette": "No website palette or design.md.",
+    "motion": "No website or motion framework.",
+    "framework": "Markdown with WeRead YAML frontmatter, e.g. 心理/自卑与超越-阿尔弗雷德·阿德勒.md:1-11.",
+    "material": "Real book titles, authors, cover URLs, reading dates, highlights and reviews.",
+    "deployment": "Existing personal Pages repository uses legacy Jekyll and an unresolved custom domain."
+  },
+  "preserve": ["Every source Markdown note", "Book metadata", "Source repository", "Personal Pages repository history"],
+  "introduce": ["Astro static site", "Riso editorial theme with Chinese type", "Searchable library", "Reading views", "GitHub Actions deployment"],
+  "inferred": {
+    "audience": "Chinese readers and the owner revisiting reading notes",
+    "use": "Find a book and read its highlights",
+    "tone": "Editorial, typographic, quiet",
+    "material": "Existing notes and actual cover images"
+  }
+}

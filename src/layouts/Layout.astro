@@ -1,0 +1,46 @@
+---
+import { BookOpen, ArrowUpRight } from 'lucide-astro';
+import '@fontsource-variable/noto-sans-sc';
+import '@fontsource-variable/noto-serif-sc';
+const { title = 'lusongcai 的书架', description = 'lusongcai 的个人阅读笔记，收藏书中的划线、思考与评论。', active = '' } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#f8f6ef" />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">跳到正文</a>
+    <header class="site-header">
+      <nav class="container navigation" aria-label="主导航">
+        <a href="/" class="wordmark" aria-label="lusongcai 的书架首页"><BookOpen size={24} aria-hidden="true" /> lusongcai</a>
+        <div class="nav-links">
+          <a href="/library/" aria-current={active === 'library' ? 'page' : undefined}>全部书目</a>
+          <a href="/#categories">分类</a>
+          <a href="https://github.com/lusongcai/my-docs" class="source-link">GitHub <ArrowUpRight size={16} aria-hidden="true" /></a>
+        </div>
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="footer-name" href="/">lusongcai 的书架</a>
+        <div class="footer-links">
+          <a href="/library/">阅读笔记</a>
+          <a href="https://github.com/lusongcai/my-docs">笔记原文</a>
+          <a href="https://github.com/lusongcai">GitHub</a>
+        </div>
+        <p class="footer-note">书籍封面与摘录来自原笔记，版权归原作者及出版方所有。</p>
+      </div>
+    </footer>
+  </body>
+</html>
+<style is:global>
+  @import '../styles/site.css';
+</style>

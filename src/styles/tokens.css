@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light;
+  --space-3xs: 2px; --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px; --space-xl: 40px; --space-2xl: 64px; --space-3xl: 96px; --space-4xl: 144px;
+  --text-xs: 0.8125rem; --text-sm: 0.875rem; --text-md: 1rem; --text-lg: 1.25rem; --text-title: 1.5rem; --text-section: 2.75rem; --text-display: 4.75rem; --text-lead: 1.125rem;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-micro: 120ms; --dur-short: 220ms; --dur-long: 420ms;
+  --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
+  --z-base: 1; --z-raised: 10; --z-sticky: 200; --z-sticky-nav: 300;
+  --color-paper: oklch(98% 0.009 90); --color-paper-2: oklch(95% 0.025 356); --color-paper-3: oklch(89% 0.06 356);
+  --color-ink: oklch(38% 0.15 265); --color-ink-2: oklch(44% 0.13 265); --color-muted: oklch(49% 0.085 265);
+  --color-rule: oklch(83% 0.035 265);
+  --color-accent: oklch(74% 0.19 356); --color-accent-ink: oklch(25% 0.10 265); --color-focus: oklch(44% 0.2 265);
+  --color-transparent: transparent; --color-on-ink: oklch(98% 0.009 90);
+  --font-display: "Noto Sans SC Variable", "PingFang SC", sans-serif; --font-body: "Noto Serif SC Variable", "Songti SC", serif;
+  --radius-card: 2px; --radius-pill: 2px; --rule-hair: 1px; --shadow-card: none; --texture-opacity: 0.04;
+  --texture-grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 9 -4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+  --tracking-display: 0; --display-weight: 800;
+}
+@media (max-width: 60rem) {
+  :root { --gutter: 24px; --text-display: 3.75rem; --text-section: 2.25rem; --section-gap-s: 80px; --section-gap: 96px; --section-gap-l: 120px; }
+}
+@media (max-width: 40rem) {
+  :root { --gutter: 20px; --text-display: 2.75rem; --text-section: 2rem; --text-title: 1.25rem; --section-gap-s: 56px; --section-gap: 72px; --section-gap-l: 96px; --gap-columns: 16px; }
+}

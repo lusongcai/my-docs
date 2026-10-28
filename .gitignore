@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+.hallmark/shots/
+.hallmark/before/
+.hallmark/reviews/
+.hallmark/*.txt

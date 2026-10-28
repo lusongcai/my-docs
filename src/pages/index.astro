@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BookCover from '../components/BookCover.astro';
+import { books, categories } from '../lib/library';
+import { ArrowUpRight } from 'lucide-astro';
+const featured = ['认知觉醒', '月亮和六便士', '被讨厌的勇气'].map((title) => books.find((b) => b.title.startsWith(title))).filter(Boolean);
+const indexed = [...books].sort((a, b) => b.highlights - a.highlights).slice(0, 5);
+---
+<Layout>
+  <section class="hero container" aria-labelledby="home-title">
+    <div class="hero-copy">
+      <h1 id="home-title">lusongcai<br /><span class="misreg">的书架</span></h1>
+      <p class="lead">读过的书，留下的句子，慢慢生长的想法。</p>
+      <a class="button primary" href="/library/">翻开阅读笔记 <ArrowUpRight size={20} aria-hidden="true" /></a>
+    </div>
+    <div class="hero-shelf" aria-label="书架选读">
+      {featured.map((book, index) => book && <a class="shelf-book" href={book.href} aria-label={`阅读《${book.title}》的笔记`}>
+        <BookCover book={book} priority={index === 0} />
+        <span class="shelf-author">{book.author}</span>
+      </a>)}
+    </div>
+  </section>
+  <section class="recent-section container" aria-labelledby="recent-title">
+    <div class="section-heading"><h2 id="recent-title">最近翻过</h2><a href="/library/">全部阅读记录 <ArrowUpRight size={20} aria-hidden="true" /></a></div>
+    <div class="reading-rows">
+      {books.slice(0, 3).map((book) => <a href={book.href} class="reading-row">
+        <h3>{book.title}</h3>
+        <span class="row-author">{book.author}</span>
+        <time datetime={book.date}>{book.date.replaceAll('-', '.')}</time>
+        <ArrowUpRight size={24} aria-hidden="true" />
+      </a>)}
+    </div>
+  </section>
+  <section class="categories-section" id="categories" aria-labelledby="category-title">
+    <div class="container categories-layout">
+      <div><h2 id="category-title">循着兴趣<br />去找一本书</h2><p>文学、心理、日常生活，也留一些位置给未知。</p></div>
+      <nav class="category-index" aria-label="按分类阅读">
+        {categories.map((category) => <a href={`/library/?category=${encodeURIComponent(category)}`}>
+          <span>{category}</span><span class="category-count">{books.filter((b) => b.category === category).length}</span>
+        </a>)}
+      </nav>
+    </div>
+  </section>
+  <section class="index-section container" aria-labelledby="index-title">
+    <div class="section-heading"><h2 id="index-title">留下的句子</h2><p>从划线最多的几本开始重读。</p></div>
+    <div class="index-rows">
+      {indexed.map((book) => <a href={book.href}>
+        <h3>{book.title}</h3><span>{book.author}</span><span class="index-count">{book.highlights} 处划线</span><ArrowUpRight size={20} aria-hidden="true" />
+      </a>)}
+    </div>
+  </section>
+</Layout>
