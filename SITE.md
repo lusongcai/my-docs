@@ -46,7 +46,7 @@ gh workflow run deploy.yml --repo lusongcai/lusongcai.github.io
 
 旧站绑定 `blog.lusongcai.cn`，2026-10-28 检查时无 DNS 解析。
 本次发布使用 `lusongcai.github.io`，解除 Pages 中的失效域名绑定。
-原主页仓库中的 `CNAME` 文件和旧笔记保留在 Git 历史及源分支中；
-新的工作流发布 `dist` 产物，不发布旧文件。
+GitHub 在解绑域名时自动删除了原主页仓库中的 `CNAME`，其内容仍保留在
+Git 历史中。旧笔记保留在源分支；新的工作流只发布 `dist` 产物。
 如需恢复自定义域名，请先配置 DNS，再在 Pages 设置中绑定，
 并同步修改 `astro.config.mjs` 中的 `site`。
